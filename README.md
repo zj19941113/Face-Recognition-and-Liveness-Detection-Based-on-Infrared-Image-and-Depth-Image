@@ -1,8 +1,8 @@
 # Face-Recognition-and-Liveness-Detection-Based-on-Infrared-Image-and-Depth-Image
-#### 准备:
-##### 1、Ubuntu C++ 编译dlib库 
+## 准备:
+### 1、Ubuntu C++ 编译dlib库 
 https://blog.csdn.net/ffcjjhv/article/details/84660869
-##### 2、数据+模型下载
+### 2、数据+模型下载
 https://pan.baidu.com/s/1jIoW6BSa5nkGWNipL7sxVQ
 其中包括：
  - candidate-face.zip（人脸库：包含29个正面人脸红外图）
@@ -12,7 +12,7 @@ https://pan.baidu.com/s/1jIoW6BSa5nkGWNipL7sxVQ
  
 ![](https://github.com/zj19941113/Face-Recognition-and-Liveness-Detection-Based-on-Infrared-Image-and-Depth-Image/blob/master/img/006-1.png)
 
-#### 代码分析:
+### 3、代码分析:
 主要包含3个函数：
 ```c
 /* 函数声明 */
@@ -30,8 +30,9 @@ string face_location(const char *imgFile,std::vector<int>&locates, std::vector<m
 bool liveness_detection(const char *DeepFile,std::vector<int>&locates); 
 ```
 运行liveness_detection，利用深度图与人脸位置信息进行活体检测，主要利用了RANSAC算法。
-#### 运行结果：
+### 4、运行结果：
 ![](https://github.com/zj19941113/Face-Recognition-and-Liveness-Detection-Based-on-Infrared-Image-and-Depth-Image/blob/master/img/006-3.png)
+
 补充：
 python版的看这里 https://blog.csdn.net/ffcjjhv/article/details/84637986 
 
