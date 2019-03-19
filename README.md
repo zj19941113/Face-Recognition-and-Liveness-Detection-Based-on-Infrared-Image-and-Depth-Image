@@ -31,11 +31,11 @@ bool liveness_detection(const char *DeepFile,std::vector<int>&locates);
 ```
 运行liveness_detection，利用深度图与人脸位置信息进行活体检测，主要利用了RANSAC算法。
 #### 运行结果：
-![](https://github.com/zj19941113/Face-Recognition-and-Liveness-Detection-Based-on-Infrared-Image-and-Depth-Image/blob/master/img/006-2.png)
+![](https://github.com/zj19941113/Face-Recognition-and-Liveness-Detection-Based-on-Infrared-Image-and-Depth-Image/blob/master/img/006-3.png)
 补充：
 python版的看这里 https://blog.csdn.net/ffcjjhv/article/details/84637986 
 
 python版的在allface文件夹共375张图片上的识别精度为99.469%，出错的两张是allleft姿态，侧转角度很大。模型算法和这篇c++版是一样的，只是语言不一样。可以看出识别效果还是很好的。
 this_is_who.py在test-face文件夹中的批量测试结果：
 
-![](https://github.com/zj19941113/Face-Recognition-and-Liveness-Detection-Based-on-Infrared-Image-and-Depth-Image/blob/master/img/006-3.png)
+![](https://github.com/zj19941113/Face-Recognition-and-Liveness-Detection-Based-on-Infrared-Image-and-Depth-Image/blob/master/img/006-5.png)
