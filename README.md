@@ -30,7 +30,16 @@ string face_location(const char *imgFile,std::vector<int>&locates, std::vector<m
 bool liveness_detection(const char *DeepFile,std::vector<int>&locates); 
 ```
 运行liveness_detection，利用深度图与人脸位置信息进行活体检测，主要利用了RANSAC算法。
-### 4、运行结果：
+### 4、运行：
+将`CMakeLists.txt`第13行修改为自己dlib的cmake路径
+```
+mkdir build && cd build
+cmake ..
+make -j4
+```
+
+运行结果：  
+
 ![](https://github.com/zj19941113/Face-Recognition-and-Liveness-Detection-Based-on-Infrared-Image-and-Depth-Image/blob/master/img/006-3.png)
 
 补充：
